@@ -33,19 +33,20 @@ else:
     money = 0.2 * 1000000
     print(f"Down Payment: ${money}")
 
-name=input("Write your name: ")
+name = input("Write your name: ")
 if len(name) < 3:
     print("Name must not be less than three characters")
 elif len(name) > 50:
     print(" Name must not be above 50 characters")
 else:
-    print("Name looks good")    
+    print("Name looks good")
 
-weight=int(input("Enter your weight: "))
-choice= input("(L)bs or (K)g :")
+weight = int(input("Enter your weight: "))
+choice = input("(L)bs or (K)g :")
 if choice.upper() == "L":
-    weight_pound= weight*0.45
+    weight_pound = weight * 0.45
     print(f"You are {weight_pound} pounds")
 elif choice.upper() == "K":
     print(f"You are {weight} kilograms")
-  
+
+# I am making a change here.
