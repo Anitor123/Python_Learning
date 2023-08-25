@@ -15,4 +15,9 @@ def area(width, length):
 def perimeter(width, length):
     return 2 * width + length
 
+
+def cirleArea(radius):
+    return 3.14 * (radius * radius)
+
+
 # I am adding this change.
