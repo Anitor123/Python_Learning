@@ -78,6 +78,7 @@ print(f"Your total bill is ${bill}")
 
 
 # Love Calculator
+# Get drawing form ascii.co.uk/art
 print("Welcome to the Love Calculator!")
 name1 = input("What is your name? \n")
 name2 = input("What is their name? \n")
@@ -110,44 +111,101 @@ else:
     print(f"Your score is {love_score}")
 
 
-# F.L.A.M.E.S
-def calculate_flames_count(name1, name2):
-    name1 = name1.lower().replace(" ", "")
-    name2 = name2.lower().replace(" ", "")
-    flames = ["f", "l", "a", "m", "e", "s"]
 
-    for char in name1:
-        if char in name2:
-            name2 = name2.replace(char, "", 1)
-            name1 = name1.replace(char, "", 1)
+# Treasure Island
+print("Welcome To Treasure Island")
+print("""
+ __________
+        /\____;;___\
+       | /         /
+       `. ())oo() .
+        |\(%()*^^()^\
+       %| |-%-------|
+      % \ | %  ))   |
+      %  \|%________|
+ejm97  %%%%
 
-    count = len(name1) + len(name2)
-    return count
+       {}           {}
+         \  _---_  /
+          \/     \/
+           |() ()|
+            \ + /
+ejm 96     / HHH  \
+          /  \_/   \
+        {}          {}
+      """)
+print("Your Mission is to find the treasure")
+cross_road = input("You're at a cross road. Where do you want to go? Type 'left' or 'right' ")
+if cross_road.lower() == "left":
+    print(r"""
+        _
+             .''.' \    _  __
+ ___         './    '. ' `'  `
+    '._______.'       \
+                       '.__________
+                                   '-.____________
+ _________________________________________________'.__________________
+                                      ____________.'
+                         __________.-'
+      _______          .'                      
+ ___.'       '.       /               '-._         
+             .'\    .' ._,.__,        ____\____.o.
+             '..'._/                 '-._______.-'
+                                     .-'_______'-.
+                                         _/    'o'
+                                      .-'
 
+        """)
+    lake = input("You come to a lake. There is an island in the middle of the lake. Type 'wait' to wait for a boat. Type 'swim' to swim across ")
+    if lake.lower() == "wait":
+        print(r"""
 
-def get_relationship(count):
-    relationship = [
-        "Friends",
-        "Lovers",
-        "Acquaintances",
-        "Married",
-        "Enemies",
-        "Siblings",
-    ]
-    index = (count % 6) - 1
-    return relationship[index]
+                                                    ____
+                                         v        _(    )
+        _ ^ _                          v         (___(__)
+       '_\V/ `
+       ' oX`
+          X                            v
+          X             -HELP!
+          X                                                 .
+          X        \O/                                      |\
+          X.a##a.   M                                       |_\
+       .aa########a.>>                                    __|__
+    .a################aa.                                 \   /
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        """)
+        island = input("You arrive at an island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which color do you choose? ") 
+        if island.lower() == "yellow":
+            print(r"""
+         _.--.
+                        _.-'_:-'||
+                    _.-'_.-::::'||
+               _.-:'_.-::::::'  ||
+             .'`-.-:::::::'     ||
+            /.'`;|:::::::'      ||_
+           ||   ||::::::'     _.;._'-._
+           ||   ||:::::'  _.-!oo @.!-._'-.
+           \'.  ||:::::.-!()oo @!()@.-'_.|
+            '.'-;|:.-'.&$@.& ()$%-'o.'\U||
+              `>'-.!@%()@'@_%-'_.-o _.|'||
+               ||-._'-.@.-'_.-' _.-o  |'||
+               ||=[ '-._.-\U/.-'    o |'||
+               || '-.]=|| |'|      o  |'||
+               ||      || |'|        _| ';
+               ||      || |'|    _.-'_.-'
+               |'-._   || |'|_.-'_.-'
+             '-._'-.|| |' `_.-'
+                    '-.||_/.-'
+          
+            """)
+            print("Congrats, You have found the Treasure")
+        elif island.lower() == "blue":
+            print("You entered a room of beasts. Game Over")
+        elif island.lower() == "red":
+            print("You entered a room of fire. Game Over")            
 
+    elif lake.lower() == "swim":
+        print("You got eaten by sharks. Game Over") 
+elif cross_road.lower() == "right":
+     print("You fell into a hole. Game Over")    
 
-def play_flames():
-    print("Welcome to the FLAMES game!")
-    print("Please enter two names to check their relationship.")
-    name1 = input("Name 1: ")
-    name2 = input("Name 2: ")
-
-    count = calculate_flames_count(name1, name2)
-    relationship = get_relationship(count)
-
-    print(f"\n{name1} and {name2} are {relationship}!")
-
-
-play_flames()
