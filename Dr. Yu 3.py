@@ -34,3 +34,30 @@ for score in student_scores:
         max_score = score
 
 print(f"The highest score is {max_score}")       
+
+for number in range(1,11):
+    print(number)
+
+
+
+total = 0
+for number in range(2,101,2):
+    total += number
+print(total)    
+# OR!!!!!!!!!!!!
+total2 =0
+for num in range(1,101):
+    if num % 2 == 0:
+        total += num
+print(total)        
+
+
+for no in range(1,101):
+    if no % 5 == 0 and no % 3 == 0:
+        print("fizzbuzz")
+    elif no % 5 == 0:
+        print("buzz")
+    elif no % 3 == 0:
+        print("fizz")        
+    else:
+        print(no)     

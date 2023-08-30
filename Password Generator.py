@@ -33,4 +33,9 @@ for a in range(length - (number + symbols)):
 random.shuffle(password)
 generated_password = ''.join(password)
 # This line of code above is used to join the items in the list into a single string
+# or 
+# password =""
+#for char in password:
+#    password += char
+# print(password)
 print("Generated password:", generated_password)
