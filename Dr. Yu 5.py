@@ -25,7 +25,7 @@ while not end_of_game:
     if guess not in chosen_word:
         lives +=1
         from hangman_art import stages
-        print(stages[lives - 1])    
+        print(stages[lives])    
         if lives == 6:
             end_of_game = True
             print("You lose")
