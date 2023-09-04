@@ -1,5 +1,5 @@
 from Auction_art import logo
-print(logo)
+
 
 bids = {}
 bidding_finished = False
@@ -14,7 +14,10 @@ def finding_winner(bidding_records):
             winner = bidder
     print(f"The winner is {winner} with a bid of ${highest_bid}")        
 
-while not bidding_finished:
+print(logo)
+
+
+while not bidding_finished: 
     name = input("What's your name: ")
     price = int(input("What's your price: $"))
     bids[name] = price
