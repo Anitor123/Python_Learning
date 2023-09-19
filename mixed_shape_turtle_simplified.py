@@ -4,17 +4,17 @@ zomp = Turtle()
 
 
 
-n = 3
+shape_no = 3
 angle = 360
 list_color_no = 0
 list_color = ["black","blue","cyan","green","yellow","orange","purple","maroon","lime","gray"]
-while not n == 11:
+while not shape_no == 11:
     zomp.shape("classic")
     zomp.color(list_color[list_color_no])
-    for tri in range(n):
-        zomp.right(angle/n)
+    for tri in range(shape_no):
+        zomp.right(angle/shape_no)
         zomp.forward(100)
-    n += 1
+    shape_no += 1
     list_color_no += 1
 
 
